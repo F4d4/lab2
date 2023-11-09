@@ -1,0 +1,67 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+top to bottom direction
+skinparam linetype ortho
+
+class Charge_Beam
+class Confide
+class Discharge
+class Frost_Breath
+class Low_Sweep
+class Quiver_Dance
+class Roost
+class Supersonick
+class Swagger
+class Tail_Whip
+class Withdraw
+
+
+class Move
+class PhysicalMove
+class SpecialMove
+class StatusMove
+
+
+class Pokemon
+class Cloyster
+class Pichu
+class Pikachu
+class Raichu
+class Shelder
+class Xurkitree
+
+
+
+Charge_Beam      -[#000082,plain]-^  SpecialMove
+Discharge    -[#000082,plain]-^  SpecialMove
+Frost_Breath    -[#000082,plain]-^  SpecialMove
+
+Low_Sweep    -[#000082,plain]-^  PhysicalMove
+
+Confide       -[#000082,plain]-^  StatusMove
+Quiver_Dance       -[#000082,plain]-^  StatusMove
+Supersonick       -[#000082,plain]-^  StatusMove
+Swagger       -[#000082,plain]-^  StatusMove
+Tail_Whip       -[#000082,plain]-^  StatusMove
+Withdraw       -[#000082,plain]-^  StatusMove
+Roost       -[#000082,plain]-^  StatusMove
+
+StatusMove    -[#000082,plain]-^  Move
+DamageMove    -[#000082,plain]-^  Move
+PhysicalMove  -[#000082,plain]-^  DamageMove
+SpecialMove   -[#000082,plain]-^  DamageMove
+
+Pichu         -[#000082,plain]-^  Pokemon
+Pikachu       -[#000082,plain]-^  Pichu
+Raichu      -[#000082,plain]-^  Pikachu
+
+Shelder        -[#000082,plain]-^  Pokemon
+Cloyster       -[#000082,plain]-^  Shelder
+
+Xurkitree      -[#000082,plain]-^  Pokemon
+
+@enduml
+
+
+
+@enduml
